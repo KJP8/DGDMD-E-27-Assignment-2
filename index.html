@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+	<title>K & K Summer 2016</title>
+    <link rel="icon" type="image/png" href="img/kkfavicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- FontAwsome.io CDN for nav menu icons -->
+    <script src="https://use.fontawesome.com/2342af6500.js"></script>
+    <!-- Picturefill https://scottjehl.github.io/picturefill/ -->
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement( "picture" );
+    </script>
+    <script type="text/javascript" src="js/picturefill.min.js" async></script> 
+</head>
+<body>
+	<div class="wrapper">
+            <!-- sticky nav -->
+            <nav>
+                <ul>
+                    <!-- icons courtsey of fontawesome.io -->
+                    <li><a href="index.html" title="Home"><i class="fa fa-home fa-lg"></i><span>Home</span></a></li>
+                    <li><a href="aboutus.html" title="About Us"><i class="fa fa-question-circle fa-lg"></i><span>About Us</span></a></li>
+                    <li><a href="blog.html" title="Blog"><i class="fa fa-newspaper-o fa-lg"></i><span>Blog</span></a></li>
+                </ul>
+            </nav>
+        
+        <!-- row 2, spans 3 columns -->
+        <div class="row">        
+            <header class="col-3">
+                <h1>Keeley & Kevin's Summer 2016</h1>
+            </header>
+        </div>
+        
+        <!-- row 3, spans 3 columns -->
+        <div class="row">
+			<main class="col-3">
+                <!-- use appropriately-sized picture depending on the client width -->
+                <picture>
+					<!-- [if IE 9]<video style-"display: none;"><![endif] -->
+					<source srcset="img/MVCC/KKfalmouth-480.jpg" media="(min-width: 582px)">
+                    <source srcset="img/MVCC/KKfalmouth-400.png" media="(min-width: 581px)">
+					<source srcset="img/MVCC/KKfalmouth-245.png" media="(max-width: 494px)" class="smallestImg">
+					<!-- [if IE 9]</video><![endif] -->
+					<img src="img/MVCC/KKfalmouth-245.png" alt="K & K Biking in Falmouth" class="smallestImg">
+				</picture>
+                
+                <div>
+                    <h2>Keeley & Kevin's Summer 2016 Adventures!</h2>
+                    <p>Keeley and Kevin spent their summer of 2016 traveling, camping, and biking all throughout New England. They also spent one week in Canandaigua, NY visiting family. This website is a blog about all of their summer travels.</p>
+                    <p><a href="aboutus.html#aboutUs">Learn more</a> about Kevin and Keeley</p>
+                    <p><a href="blog.html">Learn more</a> about their summer adventures</p>
+                </div>
+            </main>
+        </div>
+        
+        <!-- row 4, 3 boxes spanning one column each -->
+        <div class="row">
+            <article class="col-1-2">
+                <h3>Old Orchard Beach, ME</h3>
+                <p>June 24-26, 2016</p>
+                <img src="img/OOB/restaurant-245.jpg" alt="Portland Lobster Co.">
+                <p>Keeley and Kevin's first trip of the summer was to Old Orchard Beach, ME. They spent Friday night setting up camp, Saturday biking to Portland and back, and Sunday being lazy on the beach. While it may have been the first of many trips that summer, both Keeley and Kevin agree that it was their favorite.</p>
+                <p><a href="blog.html#oob">Read more...</a></p>
+            </article>
+        
+            <article class="col-1-2">
+                <h3>Canandaigua, NY</h3>
+                <p>July 2-9, 2016</p>
+                <img src="img/Cndga/4thofJuly/fireworks-245.jpg" alt="Fireworks">
+                <p>Keeley and Kevin's second trip of the summer was to Canandaigua, NY where they both grew up. They spent the entire week with both of their families partying and relaxing. Highlights of the trip include 4th of July fireworks in the town where Keeley's father grew up, and the beautiful lakeside Engagement Party hosted by Keeley's aunt <a href="aboutus.html#aboutUs" title="Learn more about us!">(yes, they are engaged!).</a></p>
+                <p><a href="blog.html#cndga">Read more...</a></p>
+            </article>
+
+            <article class="col-1-2">
+                <h3>Martha's Vineyard, Cape Cod, MA</h3>
+                <p>July 22-24, 2016</p>
+                <img src="img/MVCC/edgartown-245.jpg" alt="Edgartown">
+                <p>Keeley and Kevin's third trip of the summer was to Martha's Vineyard. They spent Friday night setting up camp in Falmouth. On Saturday. they biked to Woods Hole, rode the ferry to Martha's Vineyard, and then biked all over the Vineyard. They had plans to go to the beach on Sunday, but luck was not on their side and car troubles got in the way.</p>
+                <p><a href="blog.html#mvcc">Read more...</a></p>
+            </article>
+        </div>
+        
+        <!-- row 5, 2 columns, 2 boxes spanning 1 column each -->  
+        <div class="row last">
+            <article class="col-2">
+                <h3>Newport, RI</h3>
+                <p>August 5-7, 2016</p>
+                <img src="img/NPRI/castle-245.jpg" alt="Newport Castle">
+                <p>Keeley and Kevin's fourth trip of the summer was to Newport, RI. They spent Friday night setting up camp, Saturday setting up camp again and then biking along beautiful Ocean Avenue, and Sunday learning how to surf at First Beach. This trip was a close second to Old Orchard Beach on the favorit trip scale.</p>
+                <p><a href="blog.html#npri">Read more...</a></p>
+            </article>
+
+            <article class="col-2">
+                <h3>Falmouth, MA</h3>
+                <p>August 20, 2016</p>
+                <img src="img/FCC/beach-245.jpg" alt="Old Silver Beach">
+                <p>This was a simple trip to Old Silver Beach in Falmouth, Cape Cod to make up for the time they weren't able to go earlier in the summer due to car troubles. Keeley and Kevin like to refer to it as their last weekend of freedom before having to prepare for a new academic year.</p>
+                <p><a href="blog.html#falmouth">Read more...</a></p>
+            </article>
+        </div>        
+    </div>
+</body>
+</html>
