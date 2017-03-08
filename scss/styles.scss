@@ -68,7 +68,7 @@ nav {
         // Two levels of nesting
         a {
             color: $secondary-color;
-            padding: 1em 2em;
+            padding: $spacing $double-spacing;
             float: left;
             
             // Three levels of nesting
@@ -87,28 +87,28 @@ i {
 
 /* header styles */
 header h1 {
-    padding: 2em 0 0 1em;
+    padding: $double-spacing 0 0 $spacing;
     margin: 0;
 }
 
 /* main styles */
 main {
 	overflow: auto;
-    padding: 3em;
+    padding: $spacing*3;
 	background-color: $tertiary-color;
     
     h2 {
-        font-size: 2em;
+        font-size: $larger-font;
         margin-top: auto;
     }
 
     p {
-        font-size: 1.5em;
+        font-size: $large-font;
     }
 
     img {
         float: left;
-        margin-right: 2em;
+        margin-right: $double-spacing;
         width: auto;
         max-width: 100%;
     }
@@ -119,7 +119,7 @@ article {
     
     img {
         float: left;
-        margin-top: 1em;
+        margin-top: $spacing;
         width: auto;
         max-width: 100%;
         
@@ -206,20 +206,20 @@ article {
 @media (max-width: 1015px) {    
     main div {
         float: right;
-        margin: 1em auto 0 auto;
+        margin: $spacing auto 0 auto;
     }
 }
 
 /* adjust font sizes for easier clickability and readability at smaller widths */
 @media (max-width: 768px) {
     main p+p {
-        font-size: 1.5em;
+        font-size: $large-font;
     }
     
     article {
         
         h3, p+p {
-            font-size: 1.5em;
+            font-size: $large-font;
         }
         
         p {
@@ -255,7 +255,7 @@ article {
     }
     
     nav ul a {
-        padding: 1em 1.5em;
+        padding: $spacing $spacing-and-half;
     }
     
     .smallestImg {

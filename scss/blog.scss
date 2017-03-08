@@ -17,7 +17,7 @@ article {
     
     h4, h2 {
         text-align: center;
-        color: #37627C;
+        color: $header-color;
         margin-bottom: .5em;
     }
     
@@ -27,7 +27,7 @@ article {
     }
     
     span {
-        color: #205490;
+        color: $countdown-color;
         font-weight: bold;
     }
     

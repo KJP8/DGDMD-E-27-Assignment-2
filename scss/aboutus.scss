@@ -1,7 +1,7 @@
 @import "filemanagement/variables";
 
 .col-1-2 {
-    margin-bottom: 1.5em;    
+    margin-bottom: $spacing-and-half;    
 }
 
 .aboutUs {
@@ -9,21 +9,21 @@
 }
 
 div h2 {
-    font-size: 2em;
+    font-size: $larger-font;
     color: $secondary-accent-color;
     text-align: center;
     margin-top: .5em;
 }
 
 .aboutUs p {
-    padding:  0 2em;
+    padding:  0 $double-spacing;
 }
 
 section {
-    margin-bottom: 1.5em;
+    margin-bottom: $spacing-and-half;
     
     h4 {
-        padding:  0 2em;
+        padding:  0 $double-spacing;
     }
     
     ul {
@@ -32,7 +32,7 @@ section {
     }
     
     li {
-        margin: 1em 0;
+        margin: $spacing 0;
         font-size: 1.2em;
     }
 }
@@ -40,7 +40,7 @@ section {
 /* adjust font sizes for easier clickability and readability at smaller widths */
 @media (max-width: 768px) {
     article p {
-        font-size: 1.5em;
+        font-size: $large-font;
     }
     
     section {
@@ -49,7 +49,7 @@ section {
         }
         
         ul {
-            padding-left: 2em;
+            padding-left: $double-spacing;
             padding-right: .5em;
         }
     }
