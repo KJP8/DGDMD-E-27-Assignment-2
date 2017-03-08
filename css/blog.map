@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "../scss/blog.css",
+	"sources": [
+		"../scss/blog.scss",
+		"../scss/filemanagement/_variables.scss",
+		"../scss/filemanagement/_mixins.scss"
+	],
+	"sourcesContent": [
+		"@import \"filemanagement/variables\";\r\n@import \"filemanagement/mixins\";\r\n\r\n.row {\r\n    border-bottom: groove $secondary-accent-color;\r\n}\r\n\r\n.header {\r\n    border-bottom: none;\r\n}\r\n\r\narticle {\r\n    \r\n    img {\r\n        margin-top: 0;\r\n    }\r\n    \r\n    h4, h2 {\r\n        text-align: center;\r\n        color: #37627C;\r\n        margin-bottom: .5em;\r\n    }\r\n    \r\n    h2+p {\r\n        text-align: center;\r\n        margin-top: 0;\r\n    }\r\n    \r\n    span {\r\n        color: #205490;\r\n        font-weight: bold;\r\n    }\r\n    \r\n}\r\n\r\n/*Laptop and Desktop Screen Sizes, use large header background image */\r\n@media (min-width: 768px) {\r\n    header {\r\n        // customized mixin used\r\n        @include header-img(url(../img/MVCC/edgartown-1300.png))\r\n    }\r\n}\r\n\r\n/* Tablet and Mobile Landscape Screen Sizes, swap background image, use medium header background image */\r\n@media (min-width: 480px) and (max-width: 768px) {\r\n    header {\r\n        // customized mixin used\r\n        @include header-img(url(../img/MVCC/edgartown-710.png))\r\n    }\r\n}\r\n\r\n/* Mobile Portrate Screen Sizes, change background image, use small header background image */\r\n@media (max-width: 479px) {\r\n    header {\r\n        // customized mixin used\r\n        @include header-img(url(../img/MVCC/edgartown-445.png))\r\n    }\r\n}",
+		"// Color variables\r\n$primary-color: #87CEF3;\r\n$secondary-color: #D3D8D4;\r\n$tertiary-color: #FCF6D9;\r\n$accent-color: #6C97F0;\r\n$secondary-accent-color: #44ACD2;\r\n$type-color: #2C2933;\r\n$header-color: #37627C;",
+		"// Mixins\r\n// Customized - handling changing background images at different sizes\r\n@mixin header-img($background-img) {\r\n    background: $background-img no-repeat;\r\n    width: 100%;\r\n    height: 300px;\r\n}"
+	],
+	"mappings": ";AAGA,AAAA,IAAI,CAAC;EACD,aAAa,EAAE,MAAM,CCCA,OAAO;CDA/B;;;AAED,AAAA,OAAO,CAAC;EACJ,aAAa,EAAE,IAAK;CACvB;;;AAED,AAEI,OAFG,CAEH,GAAG,CAAC;EACA,UAAU,EAAE,CAAE;CACjB;;;AAJL,AAMI,OANG,CAMH,EAAE,EANN,AAMQ,OAND,CAMC,EAAE,CAAC;EACH,UAAU,EAAE,MAAO;EACnB,KAAK,EAAE,OAAQ;EACf,aAAa,EAAE,IAAK;CACvB;;;AAVL,AAYO,OAZA,CAYH,EAAE,GAAC,CAAC,CAAC;EACD,UAAU,EAAE,MAAO;EACnB,UAAU,EAAE,CAAE;CACjB;;;AAfL,AAiBI,OAjBG,CAiBH,IAAI,CAAC;EACD,KAAK,EAAE,OAAQ;EACf,WAAW,EAAE,IAAK;CACrB;;AAIL,uEAAuE;AACvE,MAAM,EAAL,SAAS,EAAE,KAAK;;EACb,AAAA,MAAM,CAAC;IElCP,UAAU,EFoCgD,mCAAC,CEpC/B,SAAS;IACrC,KAAK,EAAE,IAAK;IACZ,MAAM,EAAE,KAAM;GFmCb;;;AAGL,yGAAyG;AACzG,MAAM,EAAL,SAAS,EAAE,KAAK,OAAO,SAAS,EAAE,KAAK;;EACpC,AAAA,MAAM,CAAC;IE1CP,UAAU,EF4C+C,kCAAC,CE5C9B,SAAS;IACrC,KAAK,EAAE,IAAK;IACZ,MAAM,EAAE,KAAM;GF2Cb;;;AAGL,8FAA8F;AAC9F,MAAM,EAAL,SAAS,EAAE,KAAK;;EACb,AAAA,MAAM,CAAC;IElDP,UAAU,EFoD+C,kCAAC,CEpD9B,SAAS;IACrC,KAAK,EAAE,IAAK;IACZ,MAAM,EAAE,KAAM;GFmDb",
+	"names": []
+}
