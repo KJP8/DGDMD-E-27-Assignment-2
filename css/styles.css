@@ -1,251 +1,282 @@
 /* Border box declaration */
+/* line 20, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 html {
   box-sizing: border-box;
 }
 
 /* inherit border-box on all elements in the universe and before and after */
-*, 
-*:before, 
+/* line 25, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+*,
+*:before,
 *:after {
   box-sizing: inherit;
 }
 
 /* Global styles */
+/* line 32, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 body {
-    font-family: Tahoma, Geneva, sans-serif;
-    background-color: #87CEF3;
-    color: #2C2933;
+  font-family: Tahoma, Geneva, sans-serif;
+  background-color: #87CEF3;
+  color: #2C2933;
 }
 
+/* line 38, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 a {
-    color: #6C97F0;
-    text-decoration: none;
+  color: #6C97F0;
+  text-decoration: none;
 }
 
-a:hover,
-a:active {
-    color: #87CEF3;
-    text-decoration: none;
+/* line 42, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+a:hover, a:active {
+  color: #87CEF3;
 }
 
+/* line 48, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 h3 {
-    margin-bottom: 0.3em;
-    color: #37627C;
+  margin-bottom: 0.3em;
+  color: #37627C;
 }
 
-h3+p {
-    font-size: 0.8em;
-    margin: 0;
+/* line 52, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+h3 + p {
+  font-size: 0.8em;
+  margin: 0;
 }
 
+/* line 58, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .wrapper {
-    background-color: #D3D8D4;
-    width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	float: none;
+  background-color: #D3D8D4;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
 }
 
+/* line 66, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .last {
-    padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 
 /* nav styles */
-nav { 
-    background-color: #6C97F0;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+/* line 71, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+nav {
+  background-color: #6C97F0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
+/* line 77, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 nav ul {
-    margin: 0;
-	padding: 0;
-	list-style-type: none;
-	overflow: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: auto;
 }
 
+/* line 84, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 nav ul a {
-    color: #D3D8D4;
-    font-weight: bold;
-    font-size: 1.1em;
-    padding: 1em 2em;
-    float: left;
+  color: #D3D8D4;
+  padding: 1em 2em;
+  float: left;
+  font-weight: bold;
+  font-size: 1.1em;
 }
-    
+
+/* line 99, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 i {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /* header styles */
+/* line 104, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 header h1 {
-    padding: 2em 0 0 1em;
-    margin: 0;
+  padding: 2em 0 0 1em;
+  margin: 0;
 }
 
 /* main styles */
+/* line 110, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 main {
-	overflow: auto;
-    padding: 3em;
-	background-color: #FCF6D9;
+  overflow: auto;
+  padding: 3em;
+  background-color: #FCF6D9;
 }
 
+/* line 115, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 main h2 {
-	font-size: 2em;
-    margin-top: auto;
+  font-size: 2em;
+  margin-top: auto;
 }
 
+/* line 120, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 main p {
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
 
+/* line 124, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 main img {
-	float: left;
-	margin-right: 2em;
-	width: auto;
-	max-width: 100%;
+  float: left;
+  margin-right: 2em;
+  width: auto;
+  max-width: 100%;
 }
 
 /* article styles */
+/* line 135, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 article img {
-	float: left;
-    margin-top: 1em;
-	width: auto;
-	max-width: 100%;
+  float: left;
+  margin-top: 1em;
+  width: auto;
+  max-width: 100%;
 }
 
-article img+p {
-    float: right;
-    margin-bottom: 0;
-    margin-left: auto;
+/* line 141, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+article img + p {
+  float: right;
+  margin-bottom: 0;
+  margin-left: auto;
 }
 
-article p+p {
-    float: left;
+/* line 151, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+article p + p {
+  float: left;
 }
 
 /* my grid system */
+/* line 158, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .row::after {
-	content:"";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-[class*='col-']{
-	float: left;
-	margin-left: 4%;
-	min-height: 1px;
-	position: relative;
+/* line 164, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+[class*='col-'] {
+  float: left;
+  margin-left: 4%;
+  min-height: 1px;
+  position: relative;
 }
 
+/* line 171, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .col-1-2 {
-    width: 28%;
+  width: 28%;
 }
 
+/* line 175, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .col-2 {
-    width: 44%;
+  width: 44%;
 }
 
+/* line 179, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .col-3 {
-    width: 92%;
+  width: 92%;
 }
 
 /* media queries */
-
-/*Laptop and Desktop Screen Sizes, hide nav icons, use large header background image*/
+/*Laptop and Desktop Screen Sizes, use large header background image*/
 @media (min-width: 768px) {
-    header {
-        background: url(../img/boston-1.png) no-repeat;
-        width: 100%;
-        height: 300px;
-    }
-    
-    i {
-        display: none;
-    }
+  /* line 187, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  header {
+    background: url(../img/boston-1.png) no-repeat;
+    width: 100%;
+    height: 300px;
+  }
 }
 
 /* Tablet and Mobile Landscape Screen Sizes, use medium header background image */
 @media (min-width: 480px) and (max-width: 768px) {
-    .col-1-2,
-    .col-2 {
-        width: 44%;
-    }
-    
-    header {
-        background: url(../img/boston-2.png) no-repeat;
-        width: 100%;
-        height: 300px;
-    }
+  /* line 195, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  .col-1-2,
+  .col-2 {
+    width: 44%;
+  }
+  /* line 200, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  header {
+    background: url(../img/boston-2.png) no-repeat;
+    width: 100%;
+    height: 300px;
+  }
 }
 
 /* adjust "intro" font size for smaller widths */
 @media (max-width: 1202px) {
-    main p {
-        font-size: 1.2em;
-    }
+  /* line 208, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  main p {
+    font-size: 1.2em;
+  }
 }
 
 /* adjust "intro" heading font size for smaller widths */
 @media (max-width: 1080px) {
-    main h2 {
-        font-size: 1.7em;
-    }
+  /* line 215, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  main h2 {
+    font-size: 1.7em;
+  }
 }
 
 /* bring entire "intro" below the main image at a smaller widths */
-@media (max-width: 1015px) {    
-    main div {
-        float: right;
-        margin: 1em auto 0 auto;
-    }
+@media (max-width: 1015px) {
+  /* line 222, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  main div {
+    float: right;
+    margin: 1em auto 0 auto;
+  }
 }
 
 /* adjust font sizes for easier clickability and readability at smaller widths */
 @media (max-width: 768px) {
-    main p+p,
-    article h3,
-    article p+p {
-        font-size: 1.5em;
-    }
-    
-    article p {
-        font-size: 1.2em;
-    }
+  /* line 230, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  main p + p {
+    font-size: 1.5em;
+  }
+  /* line 236, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  article h3, article p + p {
+    font-size: 1.5em;
+  }
+  /* line 240, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  article p {
+    font-size: 1.2em;
+  }
 }
 
 /* Mobile Portrate Screen Sizes, use small header background image, hide nav text, show nav icons */
 @media (max-width: 479px) {
-    [class*='col-'] {
-        width: 92%;
-    }
-    
-    header {
-        background: url(../img/boston-3.png) no-repeat;
-        width: 100%;
-        height: 300px;
-    }
-    
-    i {
-        visibility: visible;
-    }
-    
-    nav span {
-        display: none;
-    }
+  /* line 248, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  [class*='col-'] {
+    width: 92%;
+  }
+  /* line 252, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  header {
+    background: url(../img/boston-3.png) no-repeat;
+    width: 100%;
+    height: 300px;
+  }
+  /* line 257, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  i {
+    visibility: visible;
+  }
+  /* line 261, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  nav span {
+    display: none;
+  }
 }
 
 /* adjust size of header h1 and nav icons, and move the main image over to the left so it's not cut off at smaller widths */
 @media (max-width: 380px) {
-    header h1 {
-        padding-left: .5em;
-    }
-    
-    nav ul a {
-        padding: 1em 1.5em;
-    }
-    
-    .smallestImg {
-        margin-left: -.5em;
-    }
+  /* line 268, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  header h1 {
+    padding-left: .5em;
+  }
+  /* line 272, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  nav ul a {
+    padding: 1em 1.5em;
+  }
+  /* line 276, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  .smallestImg {
+    margin-left: -.5em;
+  }
 }
+
+/*# sourceMappingURL=../css/styles.map */
