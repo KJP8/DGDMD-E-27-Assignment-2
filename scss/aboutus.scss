@@ -1,0 +1,56 @@
+@import "filemanagement/variables";
+
+.col-1-2 {
+    margin-bottom: 1.5em;    
+}
+
+.aboutUs {
+    background-color: $tertiary-color;
+}
+
+div h2 {
+    font-size: 2em;
+    color: $secondary-accent-color;
+    text-align: center;
+    margin-top: .5em;
+}
+
+.aboutUs p {
+    padding:  0 2em;
+}
+
+section {
+    margin-bottom: 1.5em;
+    
+    h4 {
+        padding:  0 2em;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding-left: 3.5em;
+    }
+    
+    li {
+        margin: 1em 0;
+        font-size: 1.2em;
+    }
+}
+
+/* adjust font sizes for easier clickability and readability at smaller widths */
+@media (max-width: 768px) {
+    article p {
+        font-size: 1.5em;
+    }
+    
+    section {
+        h4, ul {
+            font-size: 1.7em;
+        }
+        
+        ul {
+            padding-left: 2em;
+            padding-right: .5em;
+        }
+    }
+}

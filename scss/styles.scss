@@ -1,20 +1,5 @@
-// Color variables
-$primary-color: #87CEF3;
-$secondary-color: #D3D8D4;
-$tertiary-color: #FCF6D9;
-$accent-color: #6C97F0;
-$type-color: #2C2933;
-$header-color: #37627C;
-
-// Mixins
-// Customized - handling changing background images at different sizes
-@mixin header-img($background-img) {
-    background: $background-img no-repeat;
-    width: 100%;
-    height: 300px;
-}
-
-
+@import "filemanagement/variables";
+@import "filemanagement/mixins";
 
 /* Border box declaration */
 html {

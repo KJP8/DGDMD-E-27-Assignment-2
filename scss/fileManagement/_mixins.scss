@@ -1,0 +1,7 @@
+// Mixins
+// Customized - handling changing background images at different sizes
+@mixin header-img($background-img) {
+    background: $background-img no-repeat;
+    width: 100%;
+    height: 300px;
+}
