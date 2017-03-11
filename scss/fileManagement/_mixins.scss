@@ -1,5 +1,16 @@
 // Mixins
 // Customized - handling changing background images at different sizes
+
+// Source: DGMD E-27 week 5 - mixins.scss
+@mixin bkgd-gradient($color1, $color2) {
+	background: -webkit-linear-gradient($color1, $color2); /* Chrome 10+, Saf5.1+ */
+  	background: -moz-linear-gradient($color1, $color2); /* FF3.6+ */
+  	background: -ms-linear-gradient($color1, $color2); /* IE10 */
+ 	background: -o-linear-gradient($color1, $color2); /* Opera 11.10+ */
+  	background: linear-gradient($color1, $color2); /* W3C */
+}
+
+// Handles changing the background image at different screen sizes
 @mixin header-img($background-img) {
     background: $background-img no-repeat;
     width: 100%;
