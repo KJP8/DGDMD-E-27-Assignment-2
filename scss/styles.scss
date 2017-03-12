@@ -1,6 +1,12 @@
+// Include normalize, bourbon, and neat css files
 @import "normalize";
 @import "bourbon";
 @import "neat";
+// Include Google font file - Amatic SC
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
+// Include Google font file - Open Sans
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+// Include variables and mixins
 @import "filemanagement/variables";
 @import "filemanagement/mixins";
 
@@ -18,9 +24,28 @@ html {
 
 /* Global styles */
 body {
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
     @include bkgd-gradient($primary-color, white);
     color: $type-color;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+    font-size: $largest-font;
+}
+
+h3 {
+    margin-bottom: 0.3em;
+    color: $header-color;
+    font-size: 1.8em;
+    
+    +p {
+        font-size: 0.8em;
+        margin: 0;
+    }
 }
 
 a {
@@ -35,16 +60,6 @@ a {
     }
 }
 
-h3 {
-    margin-bottom: 0.3em;
-    color: $header-color;
-    
-    +p {
-        font-size: 0.8em;
-        margin: 0;
-    }
-}
-
 .wrapper {
     background-color: $secondary-color;
     width: 100%;
@@ -54,7 +69,8 @@ h3 {
 }
 
 .last {
-    padding-bottom: 2em;
+    padding-bottom: $double-spacing;
+    margin-top: $double-spacing;
 }
 
 /* nav styles */
@@ -109,7 +125,7 @@ main {
 	background-color: $tertiary-color;
     
     h2 {
-        font-size: $larger-font;
+        font-size: 2.4em;
         margin-top: auto;
     }
 
@@ -125,36 +141,83 @@ main {
     }
 }
 
-/* article styles */
-article {
-    
-    img {
-        float: left;
-        margin-top: $spacing;
-        width: auto;
-        max-width: 100%;
-        
-        +p {
-            float: right;
-            // Three levels of nesting
-            margin: {
-                bottom: 0;
-                left: auto;
-            }
-        }
-    }
+/* cards styles */
+// Copied from Refills - Cards
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-    p+p {
-        float: left;
+.card {
+  background-color: $card-background;
+  border: $card-border;
+  border-radius: $base-border-radius;
+  box-shadow: 0 2px 4px darken($base-background-color, 10%);
+  cursor: pointer;
+  flex-basis: 15em;
+  flex-grow: 1;
+  margin: 0 $card-margin $base-spacing $card-margin;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+
+  .card-image {
+    background-color: $card-header-background;
+    overflow: hidden;
+
+    img {
+      @include border-top-radius($base-border-radius);
+      opacity: 1;
+      transition: all 0.2s ease-in-out;
+      width: 100%;
+      max-width: 100%;
     }
+  }
+
+  .card-header {
+    background-color: $card-header-background;
+    border-bottom: $card-border;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: ($base-spacing / 3) ($base-spacing / 2);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: ($base-spacing / 2) ($base-spacing / 2);
+
+    p {
+      margin: 0 0 ($base-spacing / 2);
+      color: $type-color;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+
+    img {
     
+      opacity: $card-image-hover-opacity;
+    }
+  }
+
+  &:active {
+    background-color: $card-background;
+
+    .card-header {
+      background-color: $card-background;
+    }
+  }
 }
 
 /* my grid system */
-.row::after {
-	content:"";
-	display: table;
-	clear: both;
+.row {
+    // Bourbon Clearfix Add-on
+	@include clearfix;
 }
 
 [class*='col-']{
@@ -166,10 +229,6 @@ article {
 
 .col-1-2 {
     width: 28%;
-}
-
-.col-2 {
-    width: 44%;
 }
 
 .col-3 {
@@ -188,8 +247,7 @@ article {
 
 /* Tablet and Mobile Landscape Screen Sizes, use medium header background image */
 @media (min-width: 480px) and (max-width: 768px) {
-    .col-1-2,
-    .col-2 {
+    .col-1-2 {
         width: 44%;
     }
     
@@ -217,7 +275,8 @@ article {
 @media (max-width: 1015px) {    
     main div {
         float: right;
-        margin: $spacing auto 0 auto;
+        // Bourbon Margain Add-on
+        @include margin($spacing auto 0 auto);
     }
 }
 
@@ -227,15 +286,15 @@ article {
         font-size: $large-font;
     }
     
-    article {
+    .card-header {
         
         h3, p+p {
             font-size: $large-font;
         }
-        
-        p {
-            font-size: 1.2em;
-        }
+    }
+    
+    .card-copy p {
+        font-size: 1.2em;
     }
 }
 

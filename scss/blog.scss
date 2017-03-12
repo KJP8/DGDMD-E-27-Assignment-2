@@ -11,21 +11,58 @@
     border-bottom: none;
 }
 
+// Copied from Refills - Maps
+#map_canvas {
+  height: 400px;
+  width: 92%;
+  // Bourbon Margin Add-on
+  @include margin($spacing-and-half null $spacing-and-half null);
+}
+
+#map_canvas img {
+  max-width: none; 
+// to prevent UI control bug
+}
+
+#map_canvas .content {
+  padding: 0 0.5em 1em 0.5em;
+}
+
+#map_canvas .firstHeading {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1em;
+  margin: 0;
+}
+
+#map_canvas #bodyContent p {
+  font-size: 1em;
+  margin: 0;
+}
+
 article {
     
     img {
         margin-top: 0;
+        border-radius: 15px;
     }
     
-    h4, h2 {
+    h2 {
         text-align: center;
         color: $header-color;
         margin-bottom: .5em;
+        font-size: $larger-font;
     }
     
     h2+p {
         text-align: center;
         margin-top: 0;
+    }
+    
+    h4 {
+        // Extend used
+        @extend h2;
+        font-size: $large-font;
     }
     
     span {

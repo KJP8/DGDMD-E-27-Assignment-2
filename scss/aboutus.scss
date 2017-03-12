@@ -11,7 +11,7 @@
 }
 
 div h2 {
-    font-size: $larger-font;
+    font-size: 2.5em;
     color: $secondary-accent-color;
     text-align: center;
     margin-top: .5em;
@@ -25,18 +25,23 @@ section {
     margin-bottom: $spacing-and-half;
     
     h4 {
-        padding:  0 $double-spacing;
+        padding: 0 $spacing;
+        font-size: $larger-font;
     }
     
     ul {
         list-style-type: none;
-        padding-left: 3.5em;
+        padding-left: $double-spacing;
     }
     
     li {
         margin: $spacing 0;
         font-size: 1.2em;
     }
+}
+
+article img {
+    border-radius: 15px;
 }
 
 /* adjust font sizes for easier clickability and readability at smaller widths */
@@ -51,8 +56,8 @@ section {
         }
         
         ul {
-            padding-left: $double-spacing;
-            padding-right: .5em;
+            // Bourbon Padding Add-on
+            @include padding(null 0.5em null $double-spacing);
         }
     }
 }

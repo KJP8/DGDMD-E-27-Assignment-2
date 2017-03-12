@@ -20,7 +20,7 @@ html {
 
 /* line 13, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
 div h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #44ACD2;
   text-align: center;
   margin-top: .5em;
@@ -38,35 +38,41 @@ section {
 
 /* line 27, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
 section h4 {
-  padding: 0 2em;
+  padding: 0 1em;
+  font-size: 2em;
 }
 
-/* line 31, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+/* line 32, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
 section ul {
   list-style-type: none;
-  padding-left: 3.5em;
+  padding-left: 2em;
 }
 
-/* line 36, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+/* line 37, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
 section li {
   margin: 1em 0;
   font-size: 1.2em;
 }
 
+/* line 43, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+article img {
+  border-radius: 15px;
+}
+
 /* adjust font sizes for easier clickability and readability at smaller widths */
 @media (max-width: 768px) {
-  /* line 44, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+  /* line 49, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
   article p {
     font-size: 1.5em;
   }
-  /* line 49, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+  /* line 54, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
   section h4, section ul {
     font-size: 1.7em;
   }
-  /* line 53, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+  /* line 58, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
   section ul {
+    padding-right: 0.5em;
     padding-left: 2em;
-    padding-right: .5em;
   }
 }
 
