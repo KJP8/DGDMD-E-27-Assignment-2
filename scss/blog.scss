@@ -1,10 +1,11 @@
 // Include bourbon, and neat css files
 @import "bourbon";
 @import "neat";
-// Include variables, mixins, and fonts
+// Include variables, mixins, colors, and fonts
 @import "filemanagement/variables";
 @import "filemanagement/fonts";
 @import "filemanagement/mixins";
+@import "filemanagement/colors";
 
 .row {
     border-bottom: groove $secondary-accent-color;

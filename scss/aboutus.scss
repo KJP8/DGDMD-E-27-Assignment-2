@@ -1,9 +1,10 @@
 // Include bourbon, and neat css files
 @import "bourbon";
 @import "neat";
-// Include variables and fonts
+// Include variables, colors, and fonts
 @import "filemanagement/variables";
 @import "filemanagement/fonts";
+@import "filemanagement/colors";
 
 .col-1-2 {
     margin-bottom: $spacing-and-half;    
