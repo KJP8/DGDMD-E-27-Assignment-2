@@ -1,6 +1,9 @@
+// Include bourbon, and neat css files
 @import "bourbon";
 @import "neat";
+// Include variables and fonts
 @import "filemanagement/variables";
+@import "filemanagement/fonts";
 
 .col-1-2 {
     margin-bottom: $spacing-and-half;    
@@ -25,13 +28,17 @@ section {
     margin-bottom: $spacing-and-half;
     
     h4 {
-        padding: 0 $spacing;
-        font-size: $larger-font;
+        padding: 0 $spacing-and-half;
+        // Two levels of nesting
+        font: {
+            size: $large-font;
+            family: 'Philosopher', sans-serif;
+        }
     }
     
     ul {
         list-style-type: none;
-        padding-left: $double-spacing;
+        padding-left: 3em;
     }
     
     li {
@@ -42,22 +49,29 @@ section {
 
 article img {
     border-radius: 15px;
+    margin-top: $spacing;
 }
 
 /* adjust font sizes for easier clickability and readability at smaller widths */
 @media (max-width: 768px) {
+    
     article p {
-        font-size: $large-font;
+        font-size: 1.2em;
+    }
+    
+    h3+p {
+        font-size: 1em;
     }
     
     section {
-        h4, ul {
-            font-size: 1.7em;
+        h4 {
+            font-size: $large-font;
         }
         
         ul {
+            font-size: 1.3em;
             // Bourbon Padding Add-on
-            @include padding(null 0.5em null $double-spacing);
+            @include padding(null 0.5em null $spacing-and-half);
         }
     }
 }

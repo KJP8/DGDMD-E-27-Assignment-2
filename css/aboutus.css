@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Philosopher");
 /* line 4, C:/Users/Keeley/Desktop/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
   box-sizing: border-box;
@@ -8,17 +11,17 @@ html {
   box-sizing: inherit;
 }
 
-/* line 5, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+/* line 8, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
 .col-1-2 {
   margin-bottom: 1.5em;
 }
 
-/* line 9, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+/* line 12, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
 .aboutUs {
   background-color: #FCF6D9;
 }
 
-/* line 13, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+/* line 16, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
 div h2 {
   font-size: 2.5em;
   color: #44ACD2;
@@ -26,53 +29,60 @@ div h2 {
   margin-top: .5em;
 }
 
-/* line 20, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+/* line 23, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
 .aboutUs p {
   padding: 0 2em;
 }
 
-/* line 24, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+/* line 27, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
 section {
   margin-bottom: 1.5em;
 }
 
-/* line 27, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+/* line 30, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
 section h4 {
-  padding: 0 1em;
-  font-size: 2em;
+  padding: 0 1.5em;
+  font-size: 1.5em;
+  font-family: 'Philosopher', sans-serif;
 }
 
-/* line 32, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+/* line 39, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
 section ul {
   list-style-type: none;
-  padding-left: 2em;
+  padding-left: 3em;
 }
 
-/* line 37, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+/* line 44, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
 section li {
   margin: 1em 0;
   font-size: 1.2em;
 }
 
-/* line 43, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+/* line 50, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
 article img {
   border-radius: 15px;
+  margin-top: 1em;
 }
 
 /* adjust font sizes for easier clickability and readability at smaller widths */
 @media (max-width: 768px) {
-  /* line 49, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+  /* line 58, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
   article p {
+    font-size: 1.2em;
+  }
+  /* line 62, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+  h3 + p {
+    font-size: 1em;
+  }
+  /* line 67, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+  section h4 {
     font-size: 1.5em;
   }
-  /* line 54, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
-  section h4, section ul {
-    font-size: 1.7em;
-  }
-  /* line 58, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
+  /* line 71, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/aboutus.scss */
   section ul {
+    font-size: 1.3em;
     padding-right: 0.5em;
-    padding-left: 2em;
+    padding-left: 1.5em;
   }
 }
 

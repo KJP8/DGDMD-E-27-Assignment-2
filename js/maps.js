@@ -5,11 +5,11 @@ var bittersMap = (function () {
       myLatlng3 = new google.maps.LatLng(42.88788234322137, -77.28152275085449),
       myLatlng4 = new google.maps.LatLng(41.4901024, -71.31282850000002),
       myLatlng5 = new google.maps.LatLng(41.6250077, -70.63969159999999),
-      mapCenter = new google.maps.LatLng(43.5140121, -70.3736115),
+      mapCenter = new google.maps.LatLng(42.6525793, -73.7562317),
       mapCanvas = document.getElementById('map_canvas'),
       mapOptions = {
         center: mapCenter,
-        zoom: 6,
+        zoom: 7,
         scrollwheel: true,
         draggable: true,
         disableDefaultUI: true,

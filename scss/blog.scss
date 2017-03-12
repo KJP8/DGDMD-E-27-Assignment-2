@@ -1,14 +1,28 @@
+// Include bourbon, and neat css files
 @import "bourbon";
 @import "neat";
+// Include variables, mixins, and fonts
 @import "filemanagement/variables";
+@import "filemanagement/fonts";
 @import "filemanagement/mixins";
 
 .row {
     border-bottom: groove $secondary-accent-color;
+    
+    &:last-of-type {
+        border: none;
+    }
 }
 
 .header {
     border-bottom: none;
+}
+
+h2 {
+    font-size: $larger-font;
+    text-align: center;
+    color: $header-color;
+    margin-bottom: 0;
 }
 
 // Copied from Refills - Maps
@@ -36,7 +50,7 @@
 }
 
 #map_canvas #bodyContent p {
-  font-size: 1em;
+  font-size: -1em;
   margin: 0;
 }
 
@@ -48,10 +62,7 @@ article {
     }
     
     h2 {
-        text-align: center;
-        color: $header-color;
         margin-bottom: .5em;
-        font-size: $larger-font;
     }
     
     h2+p {
@@ -70,6 +81,10 @@ article {
         font-weight: bold;
     }
     
+    &:last-of-type {
+        padding-bottom: $double-spacing;
+    }
+    
 }
 
 /*Laptop and Desktop Screen Sizes, use large header background image */
@@ -77,6 +92,10 @@ article {
     header {
         // customized mixin used
         @include header-img(url(../img/MVCC/edgartown-1300.png))
+    }
+    
+    article p {
+        font-size: 1.2em;
     }
 }
 
@@ -86,6 +105,10 @@ article {
         // customized mixin used
         @include header-img(url(../img/MVCC/edgartown-710.png))
     }
+    
+    article p {
+        font-size: 1.3em;
+    }
 }
 
 /* Mobile Portrate Screen Sizes, change background image, use small header background image */
@@ -93,5 +116,9 @@ article {
     header {
         // customized mixin used
         @include header-img(url(../img/MVCC/edgartown-445.png))
+    }
+    
+    article p {
+        font-size: 1.3em;
     }
 }
