@@ -1,35 +1,28 @@
-// Color variables
-//$primary-color: #87CEF3;
-//$secondary-color: #D3D8D4;
-$tertiary-color: #FCF6D9;
-$accent-color: #6C97F0;
-$secondary-accent-color: #44ACD2;
-$type-color: #2C2933;
-$header-color: #37627C;
-$countdown-color: #205490;
-
 // Spacing variables
 $spacing: 1em;
 $spacing-and-half: $spacing*1.5;
 $double-spacing: $spacing*2;
 
 // Font variables
-$large-font: 1.5em;
-$larger-font: 2em;
-$largest-font: 3em;
+$type-color: #2C2933;
+$base-font-size: 1em;
+$medium-font: 1.2em;
+$large-font: $base-font-size*1.5;
+$larger-font: $base-font-size*2;
+$largest-font: $base-font-size*3;
 
 // Copied from Refills - Cards
-  $base-border-color: gainsboro !default;
-  $base-border-radius: 3px !default;
-  $base-background-color: white !default;
-  $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $dark-gray: #333 !default;
-  $base-font-color: $dark-gray !default;
-  $card-border-color: $base-border-color;
-  $card-border: 1px solid $card-border-color;
-  $card-background: lighten($card-border-color, 10%);
-  $card-header-background: $card-background;
-  $card-margin: 1em;
-  $card-image-hover-opacity: 0.7;
-  $card-image-hover-color: #F8F2B4;
+$base-border-color: gainsboro !default;
+$base-border-radius: 3px !default;
+$base-background-color: white !default;
+$base-spacing: $spacing-and-half !default;
+$action-color: #477DCA !default;
+$dark-gray: #333 !default;
+$base-font-color: $dark-gray !default;
+$card-border-color: $base-border-color;
+$card-border: 1px solid $card-border-color;
+$card-background: lighten($card-border-color, 10%);
+$card-header-background: $card-background;
+$card-margin: $spacing;
+$card-image-hover-opacity: 0.7;
+$card-image-hover-color: #F8F2B4;

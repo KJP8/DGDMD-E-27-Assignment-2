@@ -10,6 +10,7 @@
 @import "filemanagement/variables";
 @import "filemanagement/mixins";
 
+// Natalya's color functions
 // Pick a starting color to mix with and select a hue between 0-360 (check the color wheel!)
 $first-color: hsl(190, 100%, 50%);
 // Find the hue 180 degrees away on the color wheel
@@ -100,45 +101,42 @@ $second-color: complement($first-color);
 		}
 	}
 }
+// end Natalya's color functions
 
+// Natalya's color variables
 // Primary and complimentary colors
-
 $primary-color: harmonious-mix($second-color, $first-color);
 $complementary-color: harmonious-mix($first-color, $second-color);
 
 // Analogous Colors
-
 $analogous-color: adjust-hue($complementary-color, -40);
 $complementary-analogous: mix($analogous-color, $complementary-color, 66);
 
 // Complementary Neutrals, highlight, midtone, shadow
-
 $complementary-neutral: mix-neutral($complementary-color);
 $complementary-neutral-light: lighten($complementary-neutral, 33);
 $complementary-neutral-dark: darken($complementary-neutral, 33);
 
 // Primary neutrals, highlight, midtone, shadow`
-
 $primary-neutral: mix-neutral($primary-color);
 $primary-neutral-light: lighten($primary-neutral, 33);
 $primary-neutral-dark: darken($primary-neutral, 33);
 
 // Primary tint and shade
-
 $primary-light: mix($primary-neutral-light, $primary-color, 45%);
 $primary-dark: mix($primary-neutral-dark, $primary-color, 45%);
-
 $complementary-light: mix($complementary-neutral-light, $complementary-color, 45%);
 $complementary-dark: mix($complementary-neutral-dark, $complementary-color, 45%);
 
 // Pure neutrals, highlight, midtone, shadow
-
 $white: lighten($primary-neutral-light, 15);
 $neutral-gray: grayscale($primary-neutral);
 $primary-gray: mix($primary-color, $complementary-color, 30);
 $complementary-gray: mix($complementary-color, $primary-color, 63);
 $black: grayscale($complementary-neutral-dark);
+// end Natalya's color variables
 
+// global colors
 body {
     // include bkgd-gradient mixin
     @include bkgd-gradient($primary-light, $white);
@@ -154,25 +152,82 @@ a {
     }
 }
 
+h2 {
+    color: $primary-color;
+}
+
+h3, h4 {
+    color: $primary-dark;
+}
+
 .wrapper {
     // lighten Sass function
     background-color: lighten($neutral-gray, 25%);
 }
 
+// nav colors
 nav {
     // transparentize Sass function
     background-color: transparentize($primary-dark, 0.2);
     
     a {
-        color: $primary-light;
+        color: $card-header-background;
 
         &:hover,
         &:active {
-            color: $secondary-neutral-light;
+            color: $complementary-neutral-light;
         }
     }
 }
 
+// main content colors
 main {
     background-color: $card-header-background;
+}
+
+/* cards styles */
+// Copied from Refills - Cards
+.card {
+  background-color: $card-background;
+  box-shadow: 0 2px 4px darken($base-background-color, 10%);
+  
+   .card-image {
+        background-color: $card-header-background;
+   }
+   
+   .card-header {
+        background-color: $card-header-background;
+   }
+   
+   p {
+      color: $type-color;
+    }
+    
+    &:active {
+        background-color: $card-background;
+
+    .card-header {
+        background-color: $card-background;
+    }
+  }
+}
+
+// aboutus.html colors
+.aboutUs {
+    background-color: $card-header-background;
+}
+
+// blog.html colors
+#map_canvas {
+  // Bourbon Border Color Add-on
+  @include border-color($primary-color null $primary-color null);
+}
+
+.blogPost {
+    background-color: $card-header-background;
+    border-bottom-color: $primary-color;
+}
+
+article span {
+        color: $analogous-color;
 }

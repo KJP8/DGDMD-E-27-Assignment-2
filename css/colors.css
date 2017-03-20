@@ -1,7 +1,4 @@
 /*!normalize.css v2.1.3|MIT License|git.io/normalize*/
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC:700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Philosopher");
 /* line 10, C:/Users/Keeley/Desktop/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
 article,
 aside,
@@ -254,7 +251,7 @@ html {
   box-sizing: inherit;
 }
 
-/* line 143, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 140, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 body {
   background: -webkit-linear-gradient(#78c4d3, #f8fbfc);
   /* Chrome 10+, Saf5.1+ */
@@ -269,41 +266,103 @@ body {
   color: #2C2933;
 }
 
-/* line 149, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 146, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 a {
   color: #d64629;
 }
 
-/* line 152, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 149, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 a:hover, a:active {
   color: #df7f6c;
 }
 
-/* line 158, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 155, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+h2 {
+  color: #3badc4;
+}
+
+/* line 159, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+h3, h4 {
+  color: #2c7887;
+}
+
+/* line 163, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 .wrapper {
   background-color: #bfbfbf;
 }
 
-/* line 163, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 169, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 nav {
   background-color: rgba(44, 120, 135, 0.8);
 }
 
-/* line 167, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 173, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 nav a {
   color: #f6f6f6;
-  padding: 1em 2em;
-  float: left;
 }
 
-/* line 172, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 176, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 nav a:hover, nav a:active {
-  color: #c2dfe5;
+  color: #eac5be;
 }
 
-/* line 179, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 184, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 main {
   background-color: #f6f6f6;
+}
+
+/* cards styles */
+/* line 190, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+.card {
+  background-color: #f6f6f6;
+  box-shadow: 0 2px 4px #e6e6e6;
+}
+
+/* line 194, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+.card .card-image {
+  background-color: #f6f6f6;
+}
+
+/* line 198, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+.card .card-header {
+  background-color: #f6f6f6;
+}
+
+/* line 202, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+.card p {
+  color: #2C2933;
+}
+
+/* line 206, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+.card:active {
+  background-color: #f6f6f6;
+}
+
+/* line 209, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+.card:active .card-header {
+  background-color: #f6f6f6;
+}
+
+/* line 216, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+.aboutUs {
+  background-color: #f6f6f6;
+}
+
+/* line 221, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+#map_canvas {
+  border-top-color: #3badc4;
+  border-bottom-color: #3badc4;
+}
+
+/* line 226, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+.blogPost {
+  background-color: #f6f6f6;
+  border-bottom-color: #3badc4;
+}
+
+/* line 231, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+article span {
+  color: #d6297f;
 }
 
 /*# sourceMappingURL=../css/colors.map */

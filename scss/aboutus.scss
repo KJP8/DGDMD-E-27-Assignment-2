@@ -1,22 +1,16 @@
 // Include bourbon, and neat css files
 @import "bourbon";
 @import "neat";
-// Include variables, colors, and fonts
+// Include variables and fonts
 @import "filemanagement/variables";
 @import "filemanagement/fonts";
-@import "filemanagement/colors";
 
 .col-1-2 {
     margin-bottom: $spacing-and-half;    
 }
 
-.aboutUs {
-    background-color: $tertiary-color;
-}
-
 div h2 {
     font-size: 2.5em;
-    color: $secondary-accent-color;
     text-align: center;
     margin-top: .5em;
 }
@@ -44,7 +38,7 @@ section {
     
     li {
         margin: $spacing 0;
-        font-size: 1.2em;
+        font-size: $medium-font;
     }
 }
 
@@ -57,11 +51,11 @@ article img {
 @media (max-width: 768px) {
     
     article p {
-        font-size: 1.2em;
+        font-size: $medium-font;
     }
     
     h3+p {
-        font-size: 1em;
+        font-size: $base-font-size;
     }
     
     section {

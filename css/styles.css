@@ -280,16 +280,11 @@ h1, h2, h3, h4 {
 }
 
 /* line 31, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
-h1 {
-  font-size: 3em;
-}
-
-/* line 35, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 a {
   text-decoration: none;
 }
 
-/* line 39, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 35, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .wrapper {
   width: 100%;
   max-width: 1200px;
@@ -297,21 +292,21 @@ a {
   float: none;
 }
 
-/* line 46, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 42, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .last {
   padding-bottom: 2em;
   margin-top: 2em;
 }
 
 /* nav styles */
-/* line 52, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 48, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 nav {
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
-/* line 57, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 53, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 nav ul {
   margin: 0;
   padding: 0;
@@ -319,7 +314,7 @@ nav ul {
   overflow: auto;
 }
 
-/* line 64, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 60, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 nav ul a {
   padding: 1em 2em;
   float: left;
@@ -327,42 +322,43 @@ nav ul a {
   font-size: 1.1em;
 }
 
-/* line 78, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 74, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 i {
   visibility: hidden;
 }
 
 /* header styles */
-/* line 83, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 79, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 header h1 {
   padding: 2em 0 0 1em;
   margin: 0;
+  font-size: 3em;
 }
 
 /* main styles */
-/* line 89, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 86, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 main {
   overflow: auto;
   padding: 3em;
 }
 
-/* line 93, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 90, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 main h2 {
   font-size: 2.4em;
   margin-top: auto;
 }
 
-/* line 98, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 95, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 main p {
   font-size: 1.5em;
 }
 
-/* line 102, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 99, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 main span {
   font-family: 'Philosopher', sans-serif;
 }
 
-/* line 106, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 103, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 main img {
   float: left;
   margin-right: 2em;
@@ -371,32 +367,29 @@ main img {
 }
 
 /* cards styles */
-/* line 116, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 113, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 h3 {
   margin-bottom: 0.3em;
-  color: #37627C;
   font-size: 1.8em;
 }
 
-/* line 121, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 117, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 h3 + p {
   font-size: 0.8em;
   margin: 0;
 }
 
-/* line 127, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 123, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-/* line 133, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 129, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .card {
-  background-color: #f6f6f6;
   border: 1px solid gainsboro;
   border-radius: 3px;
-  box-shadow: 0 2px 4px #e6e6e6;
   cursor: pointer;
   flex-basis: 15em;
   flex-grow: 1;
@@ -405,13 +398,12 @@ h3 + p {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 145, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 139, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .card .card-image {
-  background-color: #f6f6f6;
   overflow: hidden;
 }
 
-/* line 149, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 142, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .card .card-image img {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -421,9 +413,8 @@ h3 + p {
   max-width: 100%;
 }
 
-/* line 158, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 151, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .card .card-header {
-  background-color: #f6f6f6;
   border-bottom: 1px solid gainsboro;
   border-radius: 3px 3px 0 0;
   font-weight: bold;
@@ -432,39 +423,29 @@ h3 + p {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 168, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 160, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .card .card-copy {
   font-size: 0.9em;
   line-height: 1.5em;
   padding: 0.75em 0.75em;
 }
 
-/* line 173, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 165, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .card .card-copy p {
   margin: 0 0 0.75em;
-  color: #2C2933;
 }
 
-/* line 179, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 170, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .card:focus, .card:hover {
   cursor: pointer;
 }
 
-/* line 183, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 174, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .card:focus img, .card:hover img {
   opacity: 0.7;
 }
 
-/* line 189, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
-.card:active {
-  background-color: #f6f6f6;
-}
-
-/* line 192, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
-.card:active .card-header {
-  background-color: #f6f6f6;
-}
-
+/* end cards styles */
 /* my grid system */
 /* line 20, C:/Users/Keeley/Desktop/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/mixins/_clearfix.scss */
 .row::after {
@@ -473,7 +454,7 @@ h3 + p {
   display: block;
 }
 
-/* line 204, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 188, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 [class*='col-'] {
   float: left;
   margin-left: 4%;
@@ -481,12 +462,12 @@ h3 + p {
   position: relative;
 }
 
-/* line 211, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 195, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .col-1-2 {
   width: 28%;
 }
 
-/* line 215, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+/* line 199, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
 .col-3 {
   width: 92%;
 }
@@ -494,7 +475,7 @@ h3 + p {
 /* media queries */
 /*Laptop and Desktop Screen Sizes, use large header background image*/
 @media (min-width: 768px) {
-  /* line 223, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 207, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   header {
     background: url(../img/boston-1.png) no-repeat;
     width: 100%;
@@ -504,11 +485,11 @@ h3 + p {
 
 /* Tablet and Mobile Landscape Screen Sizes, use medium header background image */
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 231, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 215, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   .col-1-2 {
     width: 44%;
   }
-  /* line 235, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 219, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   header {
     background: url(../img/boston-2.png) no-repeat;
     width: 100%;
@@ -518,21 +499,21 @@ h3 + p {
 
 /* adjust "intro" font size for smaller widths */
 @media (max-width: 1202px) {
-  /* line 243, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 227, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   main p {
     font-size: 1.2em;
   }
 }
 
 @media (max-width: 1180px) {
-  /* line 249, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 233, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   main h2 {
     font-size: 2em;
   }
 }
 
 @media (max-width: 1095px) {
-  /* line 254, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 238, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   main h2 {
     font-size: 1.7em;
   }
@@ -540,7 +521,7 @@ h3 + p {
 
 /* bring entire "intro" below the main image at a smaller widths */
 @media (max-width: 1050px) {
-  /* line 261, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 245, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   main div {
     float: right;
     margin: 1em auto 0;
@@ -549,22 +530,22 @@ h3 + p {
 
 /* adjust font sizes for easier clickability and readability at smaller widths */
 @media (max-width: 768px) {
-  /* line 270, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 254, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   main a {
     font-size: 1.2em;
   }
-  /* line 276, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 260, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   .card-header h3, .card-header p + p {
     font-size: 1.5em;
   }
-  /* line 281, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 265, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   .card-copy p {
     font-size: 1.2em;
   }
 }
 
 @media (max-width: 515px) {
-  /* line 287, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 271, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   h1 {
     font-size: 2.5em;
   }
@@ -572,29 +553,29 @@ h3 + p {
 
 /* Mobile Portrate Screen Sizes, use small header background image, adjust font size, hide nav text, show nav icons */
 @media (max-width: 479px) {
-  /* line 294, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 278, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   [class*='col-'] {
     width: 92%;
   }
-  /* line 298, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 282, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   header {
     background: url(../img/boston-3.png) no-repeat;
     width: 100%;
     height: 300px;
   }
-  /* line 305, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 289, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   main h2 {
     font-size: 1.5em;
   }
-  /* line 309, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 293, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   main p {
     font-size: 1em;
   }
-  /* line 314, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 298, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   i {
     visibility: visible;
   }
-  /* line 318, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 302, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   nav span {
     display: none;
   }
@@ -602,15 +583,15 @@ h3 + p {
 
 /* adjust size of header h1 and nav icons, and move the main image over to the left so it's not cut off at smaller widths */
 @media (max-width: 380px) {
-  /* line 325, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 309, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   header h1 {
     padding-left: .5em;
   }
-  /* line 329, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 313, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   nav ul a {
     padding: 1em 1.5em;
   }
-  /* line 333, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
+  /* line 317, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   .smallestImg {
     margin-left: -.5em;
   }
