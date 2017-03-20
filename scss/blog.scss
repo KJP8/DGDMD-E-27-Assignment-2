@@ -6,31 +6,6 @@
 @import "filemanagement/fonts";
 @import "filemanagement/mixins";
 
-// Media varibales specific to the blog.html page
-$small: 29.938em; //479px
-$sm-medium: 30em; //480px
-$medium: 48em; //768px
-
-// If/Else Media Query Mixin specific to the blog.html page
-@mixin mq ($breakpoint: $medium) {
-  @if $breakpoint == $medium {
-    @media (min-width: $medium) {
-      @content;
-    }
-  }
-  @else if $breakpoint == $sm-medium {
-    @media (min-width: $sm-medium) and (max-width: $medium) {
-      @content;
-    }
-  }
-  @else {
-    @media (max-width: $small) {
-      @content;
-    }
-  }
-}
-// End media query if/else mixin
-
 .blogPost {
     border-bottom-style: groove;
         
@@ -109,27 +84,49 @@ article {
 }
 
 // Media Queries
-/*Laptop and Desktop Screen Sizes, use large header background image */
-@include mq($medium) {
+/*Laptop and Desktop Screen Sizes, use large header background image, adjust overlapping images */
+@include mq($large) {
     header {
         // customized mixin used
         @include header-img(url(../img/MVCC/edgartown-1300.png))
     }
     
-    article p {
-        font-size: $medium-font;
+    .col-1-2 {
+        width: 44%;
+        
+        h4 {
+            text-align: left;
+        }
     }
 }
 
-/* Tablet and Mobile Landscape Screen Sizes, swap background image, use medium header background image */
-@include mq ($sm-medium) {
+@include mq($md-large) {
     header {
         // customized mixin used
-        @include header-img(url(../img/MVCC/edgartown-710.png))
+        @include header-img(url(../img/MVCC/edgartown-1300.png))
+    }
+}
+
+/* Tablet and Mobile Landscape Screen Sizes, swap background image, use medium header background image, adjust overlapping images */
+@include mq($medium) {
+    
+    .col-1-2 {
+        width: 92%;
+        
+        h4 {
+            text-align: left;
+        }
     }
     
     article p {
         font-size: 1.3em;
+    }
+}
+
+@include mq ($sm-medium) {
+    header {
+        // customized mixin used
+        @include header-img(url(../img/MVCC/edgartown-710.png))
     }
 }
 
@@ -138,9 +135,9 @@ article {
     header {
         // customized mixin used
         @include header-img(url(../img/MVCC/edgartown-445.png))
-    }
-    
-    article p {
-        font-size: 1.3em;
+        
+        h1 {
+            padding-top: 1em;
+        }
     }
 }

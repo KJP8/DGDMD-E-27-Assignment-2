@@ -354,7 +354,7 @@ main p {
 }
 
 /* line 99, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
-main span {
+main .links {
   font-family: 'Philosopher', sans-serif;
 }
 
@@ -484,7 +484,7 @@ h3 + p {
 }
 
 /* Tablet and Mobile Landscape Screen Sizes, use medium header background image */
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 790px) {
   /* line 215, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   .col-1-2 {
     width: 44%;
@@ -552,7 +552,7 @@ h3 + p {
 }
 
 /* Mobile Portrate Screen Sizes, use small header background image, adjust font size, hide nav text, show nav icons */
-@media (max-width: 479px) {
+@media (max-width: 535px) {
   /* line 278, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/styles.scss */
   [class*='col-'] {
     width: 92%;

@@ -96,7 +96,7 @@ main {
         font-size: $large-font;
     }
     
-    span {
+    .links {
         font-family: 'Philosopher', sans-serif;
     }
 
@@ -211,7 +211,7 @@ h3 {
 }
 
 /* Tablet and Mobile Landscape Screen Sizes, use medium header background image */
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 790px) {
     .col-1-2 {
         width: 44%;
     }
@@ -274,7 +274,7 @@ h3 {
 }
 
 /* Mobile Portrate Screen Sizes, use small header background image, adjust font size, hide nav text, show nav icons */
-@media (max-width: 479px) {
+@media (max-width: 535px) {
     [class*='col-'] {
         width: 92%;
     }

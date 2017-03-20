@@ -11,29 +11,29 @@ html {
   box-sizing: inherit;
 }
 
-/* line 34, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 9, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 .blogPost {
   border-bottom-style: groove;
 }
 
-/* line 37, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 12, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 .blogPost:last-of-type {
   border: none;
 }
 
-/* line 42, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 17, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 .header {
   border-bottom: none;
 }
 
-/* line 46, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 21, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 h2, article h4 {
   font-size: 2em;
   text-align: center;
   margin-bottom: 0;
 }
 
-/* line 54, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 29, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 #map_canvas {
   height: 400px;
   width: 92%;
@@ -42,17 +42,17 @@ h2, article h4 {
   border-bottom-style: groove;
 }
 
-/* line 62, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 37, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 #map_canvas img {
   max-width: none;
 }
 
-/* line 67, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 42, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 #map_canvas .content {
   padding: 0 0.5em 1em 0.5em;
 }
 
-/* line 71, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 46, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 #map_canvas .firstHeading {
   font-size: 2em;
   font-weight: bold;
@@ -60,77 +60,101 @@ h2, article h4 {
   margin: 0;
 }
 
-/* line 81, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 56, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 article img {
   margin-top: 0;
   border-radius: 15px;
 }
 
-/* line 86, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 61, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 article h2, article h4 {
   margin-bottom: .5em;
 }
 
-/* line 90, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 65, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 article h2 + p, article h4 + p {
   text-align: center;
   margin-top: 0;
 }
 
-/* line 95, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 70, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 article h4 {
   font-size: 1.5em;
 }
 
-/* line 101, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 76, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 article span {
   font-weight: bold;
 }
 
-/* line 105, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/* line 80, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
 article:last-of-type {
   padding-bottom: 2em;
 }
 
-/*Laptop and Desktop Screen Sizes, use large header background image */
-@media (min-width: 48em) {
-  /* line 114, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+/*Laptop and Desktop Screen Sizes, use large header background image, adjust overlapping images */
+@media (max-width: 65.313em) {
+  /* line 89, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
   header {
     background: url(../img/MVCC/edgartown-1300.png) no-repeat;
     width: 100%;
     height: 300px;
   }
-  /* line 119, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
-  article p {
-    font-size: 1.2em;
+  /* line 94, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+  .col-1-2 {
+    width: 44%;
+  }
+  /* line 97, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+  .col-1-2 h4 {
+    text-align: left;
   }
 }
 
-/* Tablet and Mobile Landscape Screen Sizes, swap background image, use medium header background image */
-@media (min-width: 30em) and (max-width: 48em) {
-  /* line 126, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+@media (min-width: 48em) {
+  /* line 104, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+  header {
+    background: url(../img/MVCC/edgartown-1300.png) no-repeat;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/* Tablet and Mobile Landscape Screen Sizes, swap background image, use medium header background image, adjust overlapping images */
+@media (max-width: 43.75em) {
+  /* line 113, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+  .col-1-2 {
+    width: 92%;
+  }
+  /* line 116, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+  .col-1-2 h4 {
+    text-align: left;
+  }
+  /* line 121, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+  article p {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 30em) and (max-width: 43.75em) {
+  /* line 127, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
   header {
     background: url(../img/MVCC/edgartown-710.png) no-repeat;
     width: 100%;
     height: 300px;
   }
-  /* line 131, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
-  article p {
-    font-size: 1.3em;
-  }
 }
 
 /* Mobile Portrate Screen Sizes, change background image, use small header background image */
 @media (max-width: 29.938em) {
-  /* line 138, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+  /* line 135, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
   header {
     background: url(../img/MVCC/edgartown-445.png) no-repeat;
     width: 100%;
     height: 300px;
   }
-  /* line 143, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
-  article p {
-    font-size: 1.3em;
+  /* line 139, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/blog.scss */
+  header h1 {
+    padding-top: 1em;
   }
 }
 
