@@ -6,8 +6,30 @@
 @import "filemanagement/fonts";
 @import "filemanagement/mixins";
 
-// Mixin varibales specific to the blog.html page
+// Media varibales specific to the blog.html page
+$small: 29.938em; //479px
+$sm-medium: 30em; //480px
+$medium: 48em; //768px
 
+// If/Else Media Query Mixin specific to the blog.html page
+@mixin mq ($breakpoint: $medium) {
+  @if $breakpoint == $medium {
+    @media (min-width: $medium) {
+      @content;
+    }
+  }
+  @else if $breakpoint == $sm-medium {
+    @media (min-width: $sm-medium) and (max-width: $medium) {
+      @content;
+    }
+  }
+  @else {
+    @media (max-width: $small) {
+      @content;
+    }
+  }
+}
+// End media query if/else mixin
 
 .blogPost {
     border-bottom-style: groove;
@@ -86,8 +108,9 @@ article {
     
 }
 
+// Media Queries
 /*Laptop and Desktop Screen Sizes, use large header background image */
-@media (min-width: 768px) {
+@include mq($medium) {
     header {
         // customized mixin used
         @include header-img(url(../img/MVCC/edgartown-1300.png))
@@ -99,7 +122,7 @@ article {
 }
 
 /* Tablet and Mobile Landscape Screen Sizes, swap background image, use medium header background image */
-@media (min-width: 480px) and (max-width: 768px) {
+@include mq ($sm-medium) {
     header {
         // customized mixin used
         @include header-img(url(../img/MVCC/edgartown-710.png))
@@ -111,7 +134,7 @@ article {
 }
 
 /* Mobile Portrate Screen Sizes, change background image, use small header background image */
-@media (max-width: 479px) {
+@include mq($small) {
     header {
         // customized mixin used
         @include header-img(url(../img/MVCC/edgartown-445.png))
