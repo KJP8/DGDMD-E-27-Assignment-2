@@ -298,12 +298,12 @@ nav {
 
 /* line 173, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 nav a {
-  color: #f6f6f6;
+  color: #eac5be;
 }
 
 /* line 176, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 nav a:hover, nav a:active {
-  color: #eac5be;
+  color: #df7f6c;
 }
 
 /* line 184, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
@@ -329,38 +329,48 @@ main {
 }
 
 /* line 202, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+.card h3 + p {
+  color: #df7f6c;
+}
+
+/* line 206, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 .card p {
   color: #2C2933;
 }
 
-/* line 206, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 210, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 .card:active {
   background-color: #f6f6f6;
 }
 
-/* line 209, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 213, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 .card:active .card-header {
   background-color: #f6f6f6;
 }
 
-/* line 216, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 221, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+article h3 + p {
+  color: #bc4129;
+}
+
+/* line 227, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 .aboutUs {
   background-color: #f6f6f6;
 }
 
-/* line 221, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 232, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 #map_canvas {
   border-top-color: #3badc4;
   border-bottom-color: #3badc4;
 }
 
-/* line 226, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 237, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 .blogPost {
   background-color: #f6f6f6;
   border-bottom-color: #3badc4;
 }
 
-/* line 231, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
+/* line 243, C:/Users/Keeley/Desktop/Mobile Design/Assignment 2/scss/colors.scss */
 article span {
   color: #d6297f;
 }

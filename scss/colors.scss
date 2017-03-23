@@ -171,11 +171,11 @@ nav {
     background-color: transparentize($primary-dark, 0.2);
     
     a {
-        color: $card-header-background;
+        color: $complementary-neutral-light;
 
         &:hover,
         &:active {
-            color: $complementary-neutral-light;
+            color: $complementary-light;
         }
     }
 }
@@ -199,6 +199,10 @@ main {
         background-color: $card-header-background;
    }
    
+   h3+p {
+        color: $complementary-light;
+   }
+   
    p {
       color: $type-color;
     }
@@ -213,6 +217,13 @@ main {
 }
 
 // aboutus.html colors
+article {
+    h3+p {
+        // darken Sass function
+        color: darken($complementary-light, 20%);
+    }
+}
+
 .aboutUs {
     background-color: $card-header-background;
 }
@@ -228,6 +239,8 @@ main {
     border-bottom-color: $primary-color;
 }
 
-article span {
+article {
+    span {
         color: $analogous-color;
+    }
 }
